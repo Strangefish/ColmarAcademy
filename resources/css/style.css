@@ -2,7 +2,47 @@ div {
   border: 2px solid darkblue;
 }
 
+/* temp font until typography decisions */
+
+html {
+  font-family: Helvetica;
+  font-size: 16px;
+}
+
+.content {
+  max-width: 960px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+
 /* Header content */
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+}
 
 .header {
   display: flex;
@@ -14,8 +54,68 @@ div {
 .name {
   display: inline-flex;
   align-items: center;
+  font-size: 1.5rem;
+}
+
+.name span {
+  font-weight: bold;
 }
 
 .nav {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+}
+
+li {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+/* Banner */
+
+.banner {
+  margin-top: 4rem;
+  padding:  2rem 1.5rem;
+  display: flex;
+  min-width: 75%;
+  background-color: lightblue;
+}
+
+img {
+  height: 100%;
+  width: 60%;
+}
+
+.welcome {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 1.5rem;
+}
+
+.welcome h1 {
+  width: 80%;
+}
+
+.welcome h4 {
+  margin: 2rem 0;
+  font-size: 1.2rem;
+  width: 80%;
+}
+
+
+.button {
+  width: 80%;
+  text-align: center;
+  margin: 0;
+  padding: 0.5rem 0;
+  font-weight: bold;
+  background-color: darkblue;
+  border-radius: 5px;
+}
+
+.button a {
+  color: white;
+  font-weight: 900;
 }
