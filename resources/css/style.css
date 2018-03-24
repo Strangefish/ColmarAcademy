@@ -1,5 +1,5 @@
 div {
-  border: 2px solid darkblue;
+  border: 0.5px solid darkblue;
 }
 
 /* temp font until typography decisions */
@@ -78,22 +78,26 @@ li {
 /* Banner */
 
 .banner {
-  display: inline-flex;
-  justify-content: center;
+  padding: 2rem 1.5rem;
 }
 
+.content {
+  display: inline-flex;
+}
 
-img {
+.content img {
   width: 60%;
   height: 50%;
-  margin: 2rem 1.5rem;
 }
+
+
 
 .welcome {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 80%;
+  padding-left: 1.5rem;
 }
 
 .welcome h4 {
@@ -104,4 +108,73 @@ img {
   width: 55%;
   text-align: center;
   padding: 0.5rem 0;
+}
+
+/* Main section */
+
+/* .main-container {
+  padding: 2rem 1.5rem;
+} */
+
+.main {
+  display: flex;
+}
+
+.mission {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  width: 60%;
+  margin-top: 2rem;
+  margin-left: 1.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.mission img {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.mission h2 {
+  margin-top: 32px;
+  margin-bottom: 24px;
+}
+
+.mission p {
+  line-height: 1.2;
+  font-size: 1rem;
+}
+
+.mission span {
+margin-bottom: 0;
+padding-top: 40px;
+font-size: 0.75rem;
+}
+
+.info {
+  width: 38%;
+  margin-top: 1rem;
+  margin-right: 1.5rem;
+  margin-left: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.selection {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.selection img {
+  padding: 1rem;
+  width: 35%;
+  height: 100%;
+}
+
+.choices {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 65%;
 }
