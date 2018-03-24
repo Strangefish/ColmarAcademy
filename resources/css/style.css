@@ -8,10 +8,15 @@ html {
   font-family: Helvetica;
   font-size: 16px;
 }
+/*
+.site-container {
+  display: flex;
+  justify-content: center;
+} */
 
-.content {
+/* .content {
   max-width: 960px;
-}
+} */
 
 h1 {
   font-size: 2.5rem;
@@ -35,14 +40,14 @@ h4 {
 }
 
 
+
 /* Header content */
 
-header {
+/* header {
   position: fixed;
-  top: 0;
-  width: 100%;
+  max-width: 960px;
   background-color: white;
-}
+} */
 
 .header {
   display: flex;
@@ -73,49 +78,3 @@ li {
 }
 
 /* Banner */
-
-.banner {
-  margin-top: 4rem;
-  padding:  2rem 1.5rem;
-  display: flex;
-  min-width: 75%;
-  background-color: lightblue;
-}
-
-img {
-  height: 100%;
-  width: 60%;
-}
-
-.welcome {
-  display: inline-flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  margin: 1.5rem;
-}
-
-.welcome h1 {
-  width: 80%;
-}
-
-.welcome h4 {
-  margin: 2rem 0;
-  font-size: 1.2rem;
-  width: 80%;
-}
-
-
-.button {
-  width: 80%;
-  text-align: center;
-  margin: 0;
-  padding: 0.5rem 0;
-  font-weight: bold;
-  background-color: darkblue;
-  border-radius: 5px;
-}
-
-.button a {
-  color: white;
-  font-weight: 900;
-}
