@@ -185,40 +185,58 @@ font-size: 0.75rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem 4.5rem;
+
+}
+
+.course-container h1 {
+  margin-top: 2rem;
 }
 
 .courses {
   display: flex;
-  justify-content: center;
-  margin-left: 4.5rem;
-  margin-right: 4.5rem;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 2rem 4.5rem;
 }
 
-.courses h3,
-.courses p {
-  margin-left: 1rem;
+.options {
+  flex: -1;
+  margin: 0;
+  max-width: 35%;
 }
 
-.courses h3 {
-  margin-top: 1rem;
-  margin-bottom: 0.5rem;
+.options img {
+  width: 100%;
+  height: auto;
 }
 
-.courses p {
-  margin-top: 0.5rem;
-  max-width: 75%;
+.center {
+  margin: 0 1.2rem;
 }
 
-.course-container h1 {
-  margin-bottom: 2rem;
+.row1,
+.row2 {
+  display: flex;
+  justify-content: space-between;
 }
 
+.options h3 {
+  margin: 1rem 0 0.75rem 1rem;
+}
+
+.options span {
+  margin: 0.75rem 0 0.5rem 1rem;
+}
+
+.options p {
+  margin: 0.5rem 0 1.5rem 1rem;
+  line-height: 1.6;
+}
 
 .center {
   margin: 0 2rem;
 }
 
-.options img {
-  display: none;
+.row2 {
+  margin-top: 2rem;
 }
