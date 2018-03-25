@@ -173,11 +173,18 @@ font-size: 0.75rem;
 }
 
 .choices {
-  display: inline-block;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   width: 65%;
 }
+
+.choices p {
+  margin: 0.5rem 0;
+  line-height: 1.2;
+  font-size: 1rem;
+}
+
 
 /* Courses */
 
