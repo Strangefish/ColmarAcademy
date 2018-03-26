@@ -282,84 +282,83 @@ font-size: 0.75rem;
 
 @media only screen and (max-width: 470px) {
 
-  .main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-    padding: 0;
+  .desktop {
+    display: none;
   }
 
-  .info {
-    margin: 0;
-    padding: 0;
+  .main {
+    display: flex;
+    margin: 1rem 1rem 2rem 1rem;
   }
 
   .mission {
     display: none;
   }
 
+  .info {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+
+
   .selection {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 470px;
-    margin-left: 0rem;
-    padding-left: 0rem;
+    width: 100%;
   }
 
   .selection img {
-  display: none;
+    padding: 0;
+    width: 100%;
   }
-/*
+
   .choices {
-    width: 470px;
-  } */
+    width: 100%;
+    margin: 1rem auto 4rem 1rem;
+
+  }
 
 }
-
-
 
 
 /* Courses */
 
-.course-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-}
 
 .course-container h1 {
   margin-top: 2rem;
+  text-align: center;
 }
 
 .courses {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   margin: 2rem 4.5rem;
 }
 
-.options {
-  flex: -1;
-  margin: 0;
-  max-width: 35%;
-}
 
 .options img {
   width: 100%;
   height: auto;
 }
 
-.center {
-  margin: 0 1.2rem;
-}
 
 .row1,
 .row2 {
   display: flex;
-  justify-content: space-between;
+}
+
+.row1.options,
+.row2.options {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+}
+
+.row1 {
+  margin-bottom: 2rem;
 }
 
 .options h3 {
@@ -371,20 +370,78 @@ font-size: 0.75rem;
 }
 
 .options p {
-  margin: 0.5rem 0 1.5rem 1rem;
-  line-height: 1.6;
+  padding: 0.5rem 0 1.5rem 1rem;
+  line-height: 1.3;
 }
 
 .center {
   margin: 0 2rem;
 }
 
-.row2 {
-  margin-top: 2rem;
+
+
+@media only screen and (max-width: 470px) {
+
+  .course-container h1 {
+  margin-bottom: 1rem;
+  }
+
+  .courses {
+    display: flex;
+    flex-direction: column;
+    margin: 0rem 1rem;
+  }
+
+  .row1,
+  .row2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .row1 img,
+  .row2 img {
+    display: none;
+  }
+
+  .row1 {
+    margin-bottom: 0rem;
+  }
+
+  .center {
+    margin: 0;
+  }
+
+  .row1.options,
+  .row2.options {
+    margin-bottom: 0.5rem;
+  }
+
+  .row2.options:last-child {
+    margin-bottom: 1.5rem;
+  }
+
+
+  .options h3 {
+    margin: 1rem 0 1.5rem 1rem;
+  }
+
+  .options span,
+  .options p {
+    display: none;
+  }
+
 }
+
+
 
 /* Video Section */
  /* Same as the main section so they are combined above */
+
+.thesis-container h1 {
+  padding: 2rem 0;
+  text-align: center;
+}
 
 
 /* Footer section */
