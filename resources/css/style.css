@@ -438,11 +438,30 @@ font-size: 0.75rem;
 /* Video Section */
  /* Same as the main section so they are combined above */
 
-.thesis-container h1 {
-  padding: 2rem 0;
-  text-align: center;
-}
+@media only screen and (max-width: 470px) {
 
+   .thesis-container h1 {
+   padding: 2rem 0 1rem 0;
+   text-align: center;
+    }
+
+    .main {
+      margin: 0 0 1.5rem 0;
+    }
+
+    .thesis-info,
+    .video h2,
+    .video p  {
+      display: none;
+    }
+
+    .video {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+ }
 
 /* Footer section */
 
@@ -455,3 +474,15 @@ font-size: 0.75rem;
 .footer ul span {
   margin-left: 1rem;
 }
+
+@media only screen and (max-width: 470px) {
+
+  .footer {
+    padding: 1rem 0 1rem 1rem;
+  }
+
+  .footer ul {
+    display: none;
+  }
+
+ }
