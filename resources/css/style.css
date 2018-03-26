@@ -88,15 +88,10 @@ li {
 @media only screen and (max-width: 470px) {
 
   .site-container {
-    max-width: 470px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    padding: 0;
+      max-width: 470px;
+      min-width: 300px;
+    }
 
-  }
 
   .desktop.header {
     display: none;
@@ -173,6 +168,7 @@ li {
 
   .mobile.banner {
     margin: 0;
+    padding: 0;
     max-width: 470px;
     min-width: 470px;
   }
@@ -187,20 +183,22 @@ li {
   .mobile.welcome {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    /* width: 470px; */
+    max-width: 100%;
     margin: 0;
-    padding: 0;
+    padding: 2rem 1rem;
   }
 
 
   .mobile img {
     width: 100%;
   }
-}
 
   .mobile.button {
     width: 100%;
   }
+
+}
 
 /* Main section & Video section combined*/
 
